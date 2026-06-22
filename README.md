@@ -1,16 +1,31 @@
-# React + Vite
+# Jon's Haircuts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for Jon's Haircuts — a mobile barber who brings premium cuts to your home, office, or wherever you are.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** — Hero, how it works, services, testimonials, and portfolio placeholders
+- **About** — Jon's story, values, timeline, and service area
+- **Book** — Calendar booking with date/time selection and client details form
 
-## React Compiler
+## Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Replacing placeholders
+
+Image placeholders throughout the site are labeled with what photo to add. Swap them by replacing `ImagePlaceholder` components with `<img>` tags once you have real photos.
+
+The booking form is client-side only for now — connect a backend or service like Calendly/Acuity when ready for live appointments.
