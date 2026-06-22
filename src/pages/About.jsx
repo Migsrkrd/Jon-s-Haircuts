@@ -3,17 +3,17 @@ import ImagePlaceholder from '../components/ImagePlaceholder'
 import { ScissorsIcon, CarIcon, MapPinIcon, CheckIcon } from '../components/icons'
 
 const values = [
-  'Licensed & insured mobile barber',
+  'Experienced Great Clips barber — now on his own',
   'Sanitized tools and fresh capes every visit',
   'Flexible scheduling — early mornings to evenings',
   'Kid-friendly and patient with first-time clients',
 ]
 
 const timeline = [
-  { year: '2016', text: 'Started cutting hair for friends and family while learning the craft.' },
-  { year: '2019', text: 'Completed barber certification and began building a loyal client base.' },
-  { year: '2022', text: 'Launched mobile service — bringing the chair to clients across the metro.' },
-  { year: 'Today', text: 'Hundreds of house calls and counting, with a focus on consistency and convenience.' },
+  { label: 'Great Clips', text: 'Jon honed his craft behind the chair at Great Clips, where consistency and a friendly chair-side manner mattered every shift.' },
+  { label: 'His regulars', text: 'He built a large group of loyal customers who swore by his cuts and always requested him by name — not just any available barber.' },
+  { label: 'Going solo', text: 'That following is what pushed him to start his own business: same trusted barber, but he comes to you instead of you coming to the salon.' },
+  { label: 'Today', text: 'Jon brings that experience to house calls across the metro — for clients who already know his work and anyone ready to find out why.' },
 ]
 
 export default function About() {
@@ -25,8 +25,9 @@ export default function About() {
             <p className="eyebrow">About Jon</p>
             <h1>Your barber,<br />on the road.</h1>
             <p className="page-hero__lead">
-              Jon built his reputation on sharp fades, clean line-ups, and showing up when he says he will.
-              As a travel barber, he meets clients where they are — no waiting room required.
+              Jon spent years as a barber at Great Clips, where a large group of regulars swore by his
+              work and always asked for him by name. That&apos;s why he went out on his own — same barber
+              you trust, now at your door.
             </p>
             <Link to="/book" className="btn btn--primary">Book with Jon</Link>
           </div>
@@ -45,19 +46,20 @@ export default function About() {
           <div className="about-story__text">
             <h2>The story</h2>
             <p>
-              What started as weekend cuts for friends turned into a full-time passion. Jon saw how hard
-              it was for busy parents, professionals, and anyone without easy access to a great barber —
-              so he took the shop on the road.
+              Jon&apos;s path didn&apos;t start in someone&apos;s living room — it started at Great Clips. Shift
+              after shift, he built a reputation for reliable, great cuts and easy conversation in the chair.
+              Over time, a large group of regular customers made a point of coming back for Jon specifically,
+              often waiting to get in his chair rather than take whoever was free.
             </p>
             <p>
-              Every appointment gets the same attention you&apos;d expect in a chair at a premium barbershop:
-              a consultation, a precise cut, and a finish you&apos;re proud to walk out with (even if
-              &ldquo;out&rdquo; is just your living room).
+              That loyalty is exactly why he launched Jon&apos;s Haircuts. His clients already trusted him;
+              they just wanted the convenience of having him come to them. Now he runs his own mobile
+              business — the same barber his regulars swore by at Great Clips, without the trip to the salon.
             </p>
           </div>
           <ImagePlaceholder
-            label="Jon setting up mobile barber station"
-            hint="Tools, chair, and mirror in a home setting"
+            label="Photo of Jon at work — Great Clips era or mobile setup"
+            hint="Candid behind the chair or current house-call setup"
             aspectRatio="16 / 10"
           />
         </div>
@@ -114,12 +116,12 @@ export default function About() {
         <div className="container">
           <div className="section-header">
             <h2>Journey</h2>
-            <p>Years of practice behind every house call.</p>
+            <p>From Great Clips regular to your living room.</p>
           </div>
           <ol className="timeline">
             {timeline.map((item) => (
-              <li key={item.year} className="timeline__item">
-                <span className="timeline__year">{item.year}</span>
+              <li key={item.label} className="timeline__item">
+                <span className="timeline__year">{item.label}</span>
                 <p>{item.text}</p>
               </li>
             ))}

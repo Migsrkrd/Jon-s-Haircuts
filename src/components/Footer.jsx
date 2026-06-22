@@ -12,7 +12,7 @@ export default function Footer() {
             <ScissorsIcon size={20} />
             <span>Jon&apos;s Haircuts</span>
           </div>
-          <p>Mobile barbering — premium cuts at your home, office, or wherever you are.</p>
+          <p>Former Great Clips barber — mobile cuts at your home, office, or wherever you are.</p>
         </div>
 
         <div>
