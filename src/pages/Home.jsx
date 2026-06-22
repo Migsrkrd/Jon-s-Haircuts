@@ -30,19 +30,19 @@ const services = [
 
 const testimonials = [
   {
-    quote: "Jon showed up on time with everything he needed. Best haircut I've had without leaving the house.",
+    quote: "I followed Jon from Great Clips. I used to wait just to get in his chair — now he comes straight to my house.",
     name: 'Marcus T.',
-    role: 'Repeat client',
+    role: 'Former Great Clips regular',
   },
   {
-    quote: 'Booked during my lunch break at the office. Professional, fast, and my team keeps asking who my barber is.',
+    quote: "We always requested Jon at Great Clips. When he went out on his own, there was no question we'd keep booking with him.",
     name: 'Daniel R.',
-    role: 'Corporate client',
+    role: 'Longtime client',
   },
   {
-    quote: "My son was nervous about a home visit, but Jon was patient and great with kids. We'll definitely rebook.",
+    quote: "My whole family had Jon at Great Clips. Same great cuts, and we don't have to load everyone into the car anymore.",
     name: 'Sarah M.',
-    role: 'Parent',
+    role: 'Family client',
   },
 ]
 
@@ -92,8 +92,8 @@ export default function Home() {
             </p>
             <h1>Premium cuts.<br />At your door.</h1>
             <p className="hero__lead">
-              Jon brings the barbershop experience to your home, office, or wherever life keeps you busy.
-              Book online in minutes.
+              Jon built his following as a Great Clips barber — regulars who always asked for him by name.
+              Now he brings that same trusted service to your home, office, or wherever life keeps you busy.
             </p>
             <div className="hero__actions">
               <Link to="/book" className="btn btn--primary">Book appointment</Link>
@@ -157,7 +157,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header section-header--center">
             <h2>What clients say</h2>
-            <p>Real feedback from people who booked a house call.</p>
+            <p>The kind of loyalty Jon earned at Great Clips — now on the road.</p>
           </div>
           <Carousel items={testimonialSlides} ariaLabel="Client testimonials" />
         </div>
